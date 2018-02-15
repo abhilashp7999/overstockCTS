@@ -43,7 +43,7 @@ public class OverStock {
         WebElement userSignIn = driver.findElement(By.xpath("//div[@id='dropdown-user-temp']/ul/li[1]/a"));
         userSignIn.click();
         
-        Thread.sleep(5000);	   
+        Thread.sleep(2000);	   
         int size = driver.findElements(By.tagName("iframe")).size();
         System.out.println(size);
         driver.switchTo().frame(driver.findElement(By.xpath("//*[@id='LoginLayer']/div/div[2]/div/iframe")));
